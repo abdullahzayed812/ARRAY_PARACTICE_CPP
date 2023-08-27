@@ -24,11 +24,11 @@ void factorial(int n)
 
 int multiply(int currentIndex, int arr[], int arrSize)
 {
-  long carry = 0;
+  int carry = 0;
 
   for (int i = 0; i < arrSize; i++)
   {
-    long currentArrItem = arr[i] * currentIndex + carry;
+    int currentArrItem = arr[i] * currentIndex + carry;
 
     arr[i] = currentArrItem % 10;
 
